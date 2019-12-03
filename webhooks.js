@@ -37,5 +37,5 @@ handler.on('push',event => {
 //     run_cmd('sh', ['./deploy-dev.sh'], function (text) {
 //         console.log(text)
 //     })
-}
+// }
 })
