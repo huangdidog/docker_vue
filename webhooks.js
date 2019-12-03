@@ -29,13 +29,12 @@ handler.on('error',err => {
     console.error('Error',err.message)
 })
 handler.on('push',event => {
-    console.log(111)
-//     console.log('Received * ',event.payload.ref)
-// // console.log('Received * ')
-// if (event.payload.ref === 'refs/heads/master') {
-//     console.log('Receive push')
-//     run_cmd('sh', ['./deploy-dev.sh'], function (text) {
-//         console.log(text)
-//     })
-// }
+    console.log('Received * ',event.payload.ref)
+// console.log('Received * ')
+if (event.payload.ref === 'refs/heads/master') {
+    console.log('Receive push')
+    run_cmd('sh', ['./deploy-dev.sh'], function (text) {
+        console.log(text)
+    })
+}
 })
