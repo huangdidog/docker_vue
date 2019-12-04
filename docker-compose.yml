@@ -22,7 +22,7 @@ services:
     #构建容器
     build: ./web
     volumes:
-      - ./web:/usr/src/app
+      - ./web/dist:/usr/src/app/dist
     depends_on:
       - app-pm2
   mongo:
