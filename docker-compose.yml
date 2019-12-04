@@ -21,7 +21,7 @@ services:
     container_name: web
     #构建容器
     build: ./web
-    volumes：
+    volumes:
       - ./web:/usr/src/app
     depends_on:
       - app-pm2
