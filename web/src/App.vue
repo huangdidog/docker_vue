@@ -23,7 +23,8 @@ export default {
     fetch('/api/top').then( response => {
       return response.json();
     } ).then( data => {
-      this.msg = data.result
+      console.log(data);
+      this.msg = data.data
     } );
   }
 }
