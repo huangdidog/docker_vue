@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    11234
+    112345
     <img src="./assets/logo.png">
     <ul>
       <li v-for="msg in msg">
