@@ -9,4 +9,5 @@ RUN npm config set registry https://registry.npm.taobao.org/ &&  \
 #     yarn global add @tarojs/cli && \
 #     yarn
 #执行构建
+#RUN npm run build  && cp -r dist/* /var/www/html
 CMD ["npm", "run", "build"]
